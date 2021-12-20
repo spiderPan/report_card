@@ -1,0 +1,32 @@
+{
+    "Business": {
+        "Remedial Level (Below Expectations)": {
+            "STR": [
+                "Student has not sufficiently demonstrated understanding of marketing, ethics, and social responsibility in business studies.",
+                "Student has not sufficiently demonstrated understanding of accounting, ethics, and social responsibility in business studies.",
+                "Student has not sufficiently shown understanding of information technology, ethics, and social responsibility in business.",
+                "Student has not sufficiently analyzed innovation, ethics, and social responsibility in entrepreneurship.",
+                "Student has not sufficiently demonstrated understanding of a country's ability to participate in international business.",
+                "Student has not sufficiently shown understanding of management's role in developing ethics and social responsibility.",
+                "Student has not sufficiently demonstrated understanding of business fundamentals and the functions of a business."
+            ],
+            "IMP": [
+                "Student is encouraged to ask questions to clarify understanding of business concepts.",
+                "Student is encouraged to communicate business ideas.",
+                "Student is encouraged to begin improving problem-solving skills by adopting new strategies.",
+                "Student is encouraged to use innovative approaches to solve problems.",
+                "Student is encouraged to develop fundamental information technology skills to improve communication.",
+                "Student is encouraged to begin using appropriate software applications.",
+                "Student is encouraged to begin researching using print and web sources."
+            ],
+            "NXT": [
+                "Student will benefit by beginning to use a variety of information technology application software.",
+                "Student will benefit by beginning to connect business ethics to current controversial business issues.",
+                "Student will benefit by beginning to select appropriate software applications to communicate business concepts.",
+                "Student will benefit from seeking assistance to understand business concepts, theories, and/or methodologies.",
+                "Student will benefit from identifying co-curricular opportunities to help develop enterprising skills.",
+                "Student will benefit from using financial statements to communicate principles and practices in accounting."
+            ]
+        }
+    }
+}

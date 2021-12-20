@@ -6,10 +6,10 @@
         <select v-model="subject" id="inputSubject" class="form-select">
           <option
             v-for="subjectOption in subjectOptions"
-            :value="subjectOption.value"
+            :value="subjectOption"
             v-bind:key="subjectOption"
           >
-            {{ subjectOption.text }}
+            {{ subjectOption }}
           </option>
         </select>
       </div>
@@ -37,13 +37,14 @@
         ></textarea>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="button" class="btn btn-primary">Generate</button>
       </div>
     </form>
   </div>
 </template>
 
 <script>
+import report_data from "../data/report.json";
 export default {
   name: "Generator",
   props: {
@@ -51,10 +52,7 @@ export default {
   },
   data() {
     return {
-      subjectOptions: [
-        { text: "Business", value: "buesiness" },
-        { text: "Math", value: "math" },
-      ],
+      subjectOptions: ["Business", "Math"],
       levelOptions: [
         "Remedial Level (Below Expectations)",
         "Level 1",
@@ -68,13 +66,18 @@ export default {
   },
   computed: {
     report() {
-      //TODO: replace by actual report
-      return this.subject && this.level
-        ? "You are selecting Subject " +
-            this.subject +
-            " For level " +
-            this.level
-        : "";
+      if (!this.subject || !this.level) {
+        return "";
+      }
+
+      const comments = report_data[this.subject][this.level];
+      let content = "";
+      Object.values(comments).forEach((templates) => {
+        content +=
+          templates[Math.floor(Math.random() * templates.length)] + " ";
+      });
+
+      return content;
     },
   },
 };

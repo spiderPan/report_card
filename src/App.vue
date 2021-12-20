@@ -5,7 +5,6 @@
 
 <script>
 import Generator from './components/Generator.vue'
-
 export default {
   name: 'App',
   components: {
