@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <form class="row g-3">
+    <form v-on:submit.prevent="generateReport" class="row g-3">
       <div class="col-md-6">
         <label for="inputSubject" class="form-label">Subject</label>
         <select v-model="subject" id="inputSubject" class="form-select">
@@ -37,7 +37,7 @@
         ></textarea>
       </div>
       <div class="col-12">
-        <button type="button" class="btn btn-primary">Generate</button>
+        <button class="btn btn-primary">Generate</button>
       </div>
     </form>
   </div>
@@ -62,12 +62,14 @@ export default {
       ],
       level: "",
       subject: "",
+      report: "",
     };
   },
-  computed: {
-    report() {
+  methods: {
+    generateReport: function () {
       if (!this.subject || !this.level) {
-        return "";
+        this.report = "";
+        return;
       }
 
       const comments = report_data[this.subject][this.level];
@@ -77,7 +79,7 @@ export default {
           templates[Math.floor(Math.random() * templates.length)] + " ";
       });
 
-      return content;
+      this.report = content;
     },
   },
 };

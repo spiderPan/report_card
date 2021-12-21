@@ -27,6 +27,34 @@
                 "Student will benefit from identifying co-curricular opportunities to help develop enterprising skills.",
                 "Student will benefit from using financial statements to communicate principles and practices in accounting."
             ]
+        },
+        "Level 1": {
+            "STR": [
+                "Student shows limited understanding of the importance and role of marketing, ethics, and social responsibility in business.",
+                "Student shows limited understanding of the importance and role of accounting, ethics, and social responsibility in business.",
+                "Student shows limited understanding of the role of information technology, ethics, and social responsibility in business.",
+                "Student analyzes innovation, ethics, and social responsibility in entrepreneurship with limited effectiveness.",
+                "Student demonstrates limited understanding of a country's ability to participate in international business.",
+                "Student shows limited understanding of the role of management, ethics, and social responsibility within an organization.",
+                "Student demonstrates limited understanding of business fundamentals and the functions of a business."
+            ],
+            "IMP": [
+                "Student is encouraged to ask questions to clarify understanding of business concepts.",
+                "Student is encouraged to communicate business ideas with more clarity.",
+                "Student is encouraged to improve problem-solving skills by adopting new strategies.",
+                "Student is encouraged to use innovative approaches to problem-solving.",
+                "Student is encouraged to develop necessary information technology skills to communicate with clarity.",
+                "Student is encouraged to use a variety of software applications to improve communication.",
+                "Student is encouraged to use print and web sources when researching.                "
+            ],
+            "NXT": [
+                "Student will benefit from using a variety of information technology application software.",
+                "Student will benefit from identifying current controversial business issues.",
+                "Student will benefit from selecting appropriate software applications to communicate in business studies.",
+                "Student will benefit from reviewing business concepts, theories, and/or methodologies.",
+                "Student will benefit from identifying a variety of co-curricular opportunities to help develop enterprising skills.",
+                "Student will benefit from using the appropriate financial statements to communicate principles and practices in accounting."
+            ]
         }
     }
 }
