@@ -5,12 +5,12 @@ on:
       - "master"
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: ["12"]
-    name: Node ${{ matrix.node }} sample
+    name: Deploy to Github Pages
     steps:
       - uses: actions/checkout@v2
       - name: Setup node
@@ -21,9 +21,6 @@ jobs:
         run: npm install
       - name: Build the app
         run: npm run build
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
