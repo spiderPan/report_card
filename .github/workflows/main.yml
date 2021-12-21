@@ -2,7 +2,7 @@ name: a workflow for Teacher Report Card
 on:
   push:
     branches:
-      - main
+      - "master"
 
 jobs:
   build:
