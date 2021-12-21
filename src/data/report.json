@@ -45,7 +45,7 @@
                 "Student is encouraged to use innovative approaches to problem-solving.",
                 "Student is encouraged to develop necessary information technology skills to communicate with clarity.",
                 "Student is encouraged to use a variety of software applications to improve communication.",
-                "Student is encouraged to use print and web sources when researching.                "
+                "Student is encouraged to use print and web sources when researching."
             ],
             "NXT": [
                 "Student will benefit from using a variety of information technology application software.",
@@ -54,6 +54,90 @@
                 "Student will benefit from reviewing business concepts, theories, and/or methodologies.",
                 "Student will benefit from identifying a variety of co-curricular opportunities to help develop enterprising skills.",
                 "Student will benefit from using the appropriate financial statements to communicate principles and practices in accounting."
+            ]
+        },
+        "Level 2": {
+            "STR": [
+                "Student shows some understanding of the importance and role of marketing, ethics, and social responsibility in business.",
+                "Student shows some understanding of the importance and role of accounting, ethics, and social responsibility in business.",
+                "Student shows some understanding of information and communication technology, ethics, and social responsibility in business.",
+                "Student analyzes innovation, ethics, and social responsibility in entrepreneurship with some effectiveness.",
+                "Student shows some understanding of a country's ability to participate in international business.",
+                "Student demonstrates some understanding of the role of management, ethics, and social responsibility within an organization.",
+                "Student demonstrates some understanding of business fundamentals and the functions of a business."
+            ],
+            "IMP": [
+                "Student is encouraged to ask clarifying questions to further understand business concepts.",
+                "Student is encouraged to communicate business ideas with more clarity and effectiveness.",
+                "Student is encouraged to improve problem-solving skills by adopting new strategies and sharing them with peers.",
+                "Student is encouraged to use a variety of innovative approaches to solve problems.",
+                "Student is encouraged to develop information technology skills to communicate with more clarity.",
+                "Student is encouraged to use a variety of software applications to communicate effectively.",
+                "Student is encouraged to use a variety of print and web sources when researching"
+            ],
+            "NXT": [
+                "Student will benefit from using a variety of information technology application software effectively.",
+                "Student will benefit from connecting business ethics to current controversial business issues.",
+                "Student will benefit from selecting a variety of software applications to communicate in business studies.",
+                "Student will benefit from demonstrating an understanding of business concepts, theories, and/or methodologies.",
+                "Student will benefit from proposing co-curricular opportunities to help develop enterprising skills.",
+                "Student will benefit from accurately using financial statements to communicate principles and practices in accounting."
+            ]
+        },
+        "Level 3": {
+            "STR": [
+                "Student shows considerable understanding of the role of marketing, ethics, and social responsibility in business.",
+                "Student shows considerable understanding of the role of accounting, ethics, and social responsibility in business.",
+                "Student shows considerable understanding of the role of information technology, ethics, and social responsibility in business.",
+                "Student analyzes innovation, ethics, and social responsibility in entrepreneurship with considerable effectiveness.",
+                "Student shows considerable understanding of a country's ability to participate in international business.",
+                "Student shows considerable understanding of management's role in developing ethics and social responsibility.",
+                "Student demonstrates considerable understanding of business fundamentals and the functions of a business."
+            ],
+            "IMP": [
+                "Student is encouraged to ask detailed questions to ensure understanding of business concepts.",
+                "Student is encouraged to communicate business ideas with considerable effectiveness.",
+                "Student is encouraged to improve problem-solving skills by refining strategies and sharing them with peers.",
+                "Student is encouraged to use and share a variety of innovative approaches to solve problems.",
+                "Student is encouraged to develop more sophisticated information technology skills to communicate business concepts.",
+                "Student is encouraged to integrate a variety of software applications to communicate in business studies.",
+                "Student is encouraged to use primary and secondary print and web sources."
+            ],
+            "NXT": [
+                "Student will benefit from using a variety of information technology application software more effectively.",
+                "Student will benefit from examining business ethics and making connections to current controversial business issues.",
+                "Student will benefit from integrating a variety of software applications to communicate in business studies.",
+                "Student will benefit from extending understanding of business concepts, theories, and/or methodologies.",
+                "Student will benefit from implementing co-curricular opportunities to help develop enterprising skills.",
+                "Student will benefit from consistently using appropriate financial statements to communicate principles/practices in accounting"
+            ]
+        },
+        "Level 4": {
+            "STR": [
+                "Student shows thorough understanding of the role of marketing, ethics, and social responsibility in business.",
+                "Student shows thorough understanding of the role of accounting, ethics, and social responsibility in business.",
+                "Student shows thorough understanding of the role of information technology, ethics, and social responsibility in business.",
+                "Student thoroughly analyzes innovation, ethics, and social responsibility in entrepreneurship.",
+                "Student shows thorough understanding of a country's ability to participate in international business.",
+                "Student demonstrates thorough understanding of the role of management, ethics, and social responsibility within an organization.",
+                "Student demonstrates thorough understanding of business fundamentals and the functions of a business."
+            ],
+            "IMP": [
+                "Student is encouraged to ask detailed questions to extend understanding of business concepts.",
+                "Student is encouraged to communicate business ideas with precision and effectiveness.",
+                "Student is encouraged to improve problem-solving skills by expanding his/her repertoire of strategies.",
+                "Student is encouraged to extend and share his/her innovative approaches to solving problems.",
+                "Student is encouraged to master information technology skills to further enhance communication.",
+                "Student is encouraged to master the integration of software applications.",
+                "Student is encouraged to extend research by using a variety of primary and secondary print and web sources."
+            ],
+            "NXT": [
+                "Student will benefit from using a variety of information technology application software more efficiently and effectively.",
+                "Student will benefit from examining and discussing business ethics in current controversial business issues.",
+                "Student will benefit from extending appropriate software applications beyond the course.",
+                "Student will benefit from applying business concepts, theories, and/or methodologies to other contexts.",
+                "Student will benefit from organizing a co-curricular event to consolidate enterprising skills.",
+                "Next steps include continuing to use appropriate financial statements to communicate principles/practices in accounting."
             ]
         }
     }
