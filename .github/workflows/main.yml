@@ -5,21 +5,25 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node: ["12"]
+    name: Node ${{ matrix.node }} sample
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node version ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ matrix.node }}
       - name: Install Packages
         run: npm install
       - name: Build the app
         run: npm run build
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
