@@ -3,7 +3,12 @@
     <form v-on:submit.prevent="generateReport" class="row g-3">
       <div class="col-md-6">
         <label for="inputSubject" class="form-label">Subject</label>
-        <select v-model="subject" @change="generateReport" id="inputSubject" class="form-select">
+        <select
+          v-model="subject"
+          @change="generateReport"
+          id="inputSubject"
+          class="form-select"
+        >
           <option
             v-for="subjectOption in subjectOptions"
             :value="subjectOption"
@@ -15,7 +20,13 @@
       </div>
       <div class="col-md-6">
         <label for="inputLevel" class="form-label">Level</label>
-        <select v-model="level" @change="generateReport" id="inputLevel" class="form-select">
+        <select
+          v-model="level"
+          @change="generateReport"
+          :disabled="!levelOptions.length"
+          id="inputLevel"
+          class="form-select"
+        >
           <option
             v-for="levelOption in levelOptions"
             :value="levelOption"
@@ -64,6 +75,16 @@ export default {
       subject: "",
       report: "",
     };
+  },
+  watch: {
+    subject(newSubject) {
+      if (report_data[newSubject]) {
+        this.levelOptions = Object.keys(report_data[newSubject]);
+      } else {
+        this.levelOptions = [];
+        this.level = "";
+      }
+    },
   },
   methods: {
     generateReport: function () {
