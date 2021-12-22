@@ -3,7 +3,7 @@
     <form v-on:submit.prevent="generateReport" class="row g-3">
       <div class="col-md-6">
         <label for="inputSubject" class="form-label">Subject</label>
-        <select v-model="subject" id="inputSubject" class="form-select">
+        <select v-model="subject" @change="generateReport" id="inputSubject" class="form-select">
           <option
             v-for="subjectOption in subjectOptions"
             :value="subjectOption"
@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-6">
         <label for="inputLevel" class="form-label">Level</label>
-        <select v-model="level" id="inputLevel" class="form-select">
+        <select v-model="level" @change="generateReport" id="inputLevel" class="form-select">
           <option
             v-for="levelOption in levelOptions"
             :value="levelOption"
