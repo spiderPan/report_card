@@ -12,6 +12,7 @@
           <option
             v-for="subjectOption in subjectOptions"
             :value="subjectOption"
+            :disabled="!subjectOptions.length"
             v-bind:key="subjectOption"
           >
             {{ subjectOption }}
@@ -63,14 +64,7 @@ export default {
   },
   data() {
     return {
-      subjectOptions: ["Business", "Math"],
-      levelOptions: [
-        "Remedial Level (Below Expectations)",
-        "Level 1",
-        "Level 2",
-        "Level 3",
-        "Level 4",
-      ],
+      levelOptions: [],
       level: "",
       subject: "",
       report: "",
@@ -84,6 +78,11 @@ export default {
         this.levelOptions = [];
         this.level = "";
       }
+    },
+  },
+  computed: {
+    subjectOptions: function () {
+      return Object.keys(report_data);
     },
   },
   methods: {
