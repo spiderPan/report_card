@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" style="background:yellow;">
     <form v-on:submit.prevent="generateReport" class="row g-3">
       <div class="col-md-6">
         <label for="inputSubject" class="form-label">Subject</label>
